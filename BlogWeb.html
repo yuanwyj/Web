@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>github page test</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body {
+			color: #fff;
+		}
+		.box {
+			width: 30%;
+			height: 200px;
+			background-color: #DEDEDE;
+			border: 1px solid #fff;
+			float: left;
+		}
+		#box1 {
+			/*float: right;*/
+		}
+		.box1 {
+			width: 40%;
+			height: 50px;
+			background-color: #555;
+			border-bottom: 1px solid #fff;
+		}
+		#box11 {
+			float: right;
+		}
+		#box12 {
+			position: absolute;
+			top: 100px;
+		}
+		#box12 p {
+			height: 50px;
+		}
+ 	</style>
+</head>
+<body>
+	<div id="box1" class="box">
+		<div id="box11" class="box1"></div>
+		<div id="box12" class="box1">
+			<p>不知道说什么好，反正就是占个位置qwer</p>
+		</div>
+		<div id="box13" class="box1"></div>
+	</div>
+	<div id="box2" class="box"></div>
+	<div id="box3" class="box">
+		<button id="start">开始</button>
+		<input type="text" name="" id="txt">
+		<button id="stop">stop</button>
+	</div>
+	<script type="text/javascript">
+
+		var c = 0;
+		var t;
+		var start = document.getElementById('start');
+		start.onclick  = function() {
+			
+			timecount();
+		}
+		var stop = document.getElementById('stop');
+		stop.onclick = function() {
+			stopcount();
+		}
+		function timecount() {
+			document.getElementById('txt').value = c;
+			c = c + 1;
+			t = setTimeout('timecount()',1000);
+		}
+
+		function stopcount() {
+			clearTimeout(t);
+		}
+
+
+		window.onload = function (){
+			settime();
+		}
+
+		function settime() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			var st;
+			m = checktime(m);
+			s = checktime(s);
+
+			document.getElementById('box2').innerHTML = h + ":" + m + ":" + s
+			st = setTimeout('settime()',500);
+
+		}
+		function checktime(i) {
+			if (i < 10 ) {
+				i = "0" + i;
+			}
+			return i;
+		}
+
+	</script>
+</body>
+</html>
