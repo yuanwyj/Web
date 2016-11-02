@@ -4,7 +4,7 @@ body {
 nav {
 	position: fixed;
 	width: 100%;
-	height: 55px;
+	height: 50px;
 	background-color: #f2f2f2;
 	z-index: 2000
 }
@@ -49,7 +49,7 @@ nav {
 }
 .control {
 	position: relative;
-	top: 375px;
+	top: 300px;
 	left: 45%;
 	z-index: 100;
 
@@ -81,11 +81,11 @@ nav {
     z-index: 100px;
 }
 .pre {
-	top: 200px;
+	top: 145px;
 	left: 100px;
 }
 .net {
-	top: 200px;
+	top: 145px;
 	right: 100px;
 }
 .ctr:hover {
@@ -101,7 +101,7 @@ nav {
 	display: block; 
  	float: left; 
  	width: 1366px; 
- 	height: 400px;
+ 	height: 324px;
 }
 .show {
 	display: block;
@@ -125,6 +125,8 @@ nav {
 #product {
 	border:1px solid #DEDEDE;
 	overflow: hidden;
+	margin-top: 30px;
+	border-bottom: 4px solid #dedede
 }
 .product-top {
 	
@@ -183,6 +185,105 @@ nav {
 	border: 1px solid #dedede;
 	padding: 2px;
 }
+#bottom {
+	width: 100%;
+	height: auto;
+	border-top: 6px solid #dedede;
+	margin-top: 60px;
+	background-color: #fff;
+}
+.permit {
+    width: 70%;
+    height: 65px;
+    border: 1px solid #dedede;
+    margin-top: 20px auto;
+    margin: auto;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.permit-box {
+	width: 20%;
+	float: left;
+	height: 100%;
+}
+.picon {	
+    width: 48px;
+    height: 48px;
+    display: block;
+    position: absolute;
+    margin-left: 41px;
+    margin-top: 7px;
+}
+.picon1 {
+	background-image: url(../images/1124679.png);
+}
+.picon2 {
+	background-image: url(../images/1099654.png);
+}
+.picon3 {
+	background-image: url(../images/1138201.png);
+}
+.picon4 {
+	background-image: url(../images/1087255.png);
+	background-size:100% 100%;
+}
+.picon5 {
+	background-image: url(../images/521259.png);
+}
+.permit-world {
+	margin-left: 98px;
+    font-size: 21px;
+    margin-top: 21px;
+    font-weight: bold;
+    color: rgba(243, 0, 0, 0.78);
+}
+#contact {
+	width: 70%;
+}
+.contact-way {
+	width: 20%;
+    border-right: 1px solid #dedede;
+    margin: 20px;
+    float: left;
+}
+.hot-world {
+	    font-size: 22px;
+    font-weight: bolder;
+    color: chocolate;
+}
+.hot-phone {
+	font-size: 30px;
+    color: #57ce0c;
+    font-weight: 600;
+}
+.email-world {
+	color: #00c5ff;
+}
+.email a{
+    font-size: 18px;
+    color: #57ce0c;
+}
+.friendly-link {
+	float: left;
+}
+.unstyle {
+	margin: 0
+}
+.unstyle li{
+	list-style: none;
+	line-height: 26px;
+}
+.link-box {
+	float: left;
+    margin: 33px
+}
+.link-title {
+	font-size: 20px;
+}
+.color {
+	background-color: #555;
+}
 footer {
 	text-align: center;
+	margin-top: 50px;
 }
