@@ -267,3 +267,384 @@ body {
 .view-cart a {
 	color: #ff1a45;
 }
+#page {
+    margin-top: 25px;
+    text-align: right;
+}
+#page a {
+    color: #4cb1ca;
+    font-size: 18px;
+    font-weight: 100;
+    padding-right: 22px;
+}
+#page a:hover {
+	text-decoration: none;
+	opacity: .5
+}
+#page a:focus {
+	text-decoration: none;
+}
+#page h6 {
+	color: #999;
+    font-size: 13px;
+}
+#page h6 b {
+	color: #4cb1ca;
+    font-size: 20px;
+    font-weight: 100;
+    padding-right: 20px;
+}
+.page-detail {
+
+}
+#content {
+	background: #fff;
+    padding: 2em 0em;
+    z-index: -1;
+}
+.row {
+	margin-left: 0px;
+}
+#showbox {
+	border-right: 2px dashed #ccc;
+}
+
+.box {
+
+}
+
+.main-box {
+	border: 1px solid #dedede;
+
+}
+
+.small-box {
+	list-style: none;
+	overflow: hidden;
+	margin-left: 0px;
+}
+.box ul li {
+    float: left;
+    border: 2px solid rgba(0, 0, 0, 0.45);
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.box ul li img {
+	width: 50px;
+	height: 50px;
+}
+.active {
+	border-color: #ea042f!important;
+}
+
+
+#box {
+	position: relative;
+}
+#mian-box {
+	position: relative;
+	max-width: 100%;
+}
+
+.roomDiv {
+
+    display: none;
+    position: absolute;
+   	top: 0px;
+    left: 316px;
+   	width: 600px;
+    height: 510px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    z-index: 15000;
+}
+#roomDiv img {
+    position: absolute;
+    z-index: 5;
+	max-width: none;
+}
+
+#float-box {
+    display: none;
+    width: 160px;
+    height: 120px;
+    position: absolute;
+    background: #ffffcc;
+    border: 1px solid #ccc;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+#mark {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 85%;
+    background-color: #fff;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 10;
+}
+
+#details {
+
+}
+#details h4 {
+    font-size: 1.5em;
+    line-height: 33px;
+    margin: 0;
+    color: #747272;
+    font-weight: 600;
+}
+#details h5 {
+    font-size: 1.5em;
+    line-height: 33px;
+    margin: 0;
+    color: #000;
+    font-weight: 100;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+}
+.price-details {
+    overflow: hidden;
+    padding: 1.5em 0px;
+}
+.price-details p {
+    float: left;
+    font-size: 2em;
+    color: #76b4ca;
+}
+.price-details a {
+	float: right;
+    font-size: 1.5em;
+	color: #f02b63;
+}
+
+.available h6 {
+    font-size: 1.5em;
+    padding: 20px 0;
+	color: #f02b63;
+    font-weight: 100;
+}
+.available ul {
+	list-style: none;
+	overflow: hidden;
+	margin-left: 0px;
+}
+.available ul li {
+	float: left;
+    display: inline-block;
+    width: 40%;
+}
+.available ul li select {
+	width: 60%;
+}
+.cart-an {
+    background-color: #ff1a45;
+    color: #fff;
+    height: 36px;
+    width: 120px;
+    border: 1px solid #dedede;
+    display: block;
+    font-size: 15px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.cart-an:hover {
+	text-decoration: none;
+	background-color:#5bc0de; 
+	color:#fff;
+}
+.cart-an:focus {
+	text-decoration: none;
+	color: #fff;
+}
+#details .share h4 {
+	color: #f02b63;
+	font-weight: 100;
+	padding: 15px 0;
+}
+.share ul {
+	list-style: none;
+	overflow: hidden;
+	margin-left: 0px;
+}
+.share ul li {
+	display: inline-block;
+     margin: 5px 6px; 	
+}
+.share ul li a{
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-color: #5bc0de;
+    border-radius: 50px;
+}
+.share ul li a img {
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#Carousel {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 120px;
+}
+
+#Carousel ul{
+	position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    list-style: none;
+    height: 100%;
+    width: 1720px;
+}
+#Carousel ul li {
+	float: left;
+	width: 172px;
+}
+
+.pre {
+    background: url(../images/img-sprite.png)no-repeat -59px -76px;
+    z-index: 30;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50px;
+}
+
+.net{
+    background: url(../images/img-sprite.png)no-repeat -93px -76px;
+    z-index: 30;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50px;
+    left: 831px;
+}
+
+#span1 {
+    padding: 0 1.5em;
+    margin-left: 0;
+    width: 215px;
+}
+.passible-about {
+
+}
+.possible-about h4 {
+    color: #7db159;
+    font-size: 22px;
+    margin: 0;
+    font-weight: 400;
+}
+.tab1 {
+    box-shadow: 2px 5px 10px #888888;
+    width: 100%;
+    margin: 1em 0;
+    
+    border-radius: 5px;
+    background-color: #fff;
+}
+.tab1 ul{
+	list-style: none;
+	overflow: hidden;
+	margin: 0;
+	background-color: rgba(0,0,0,0.05);
+	cursor: pointer;
+}
+.tab1 ul li {
+	line-height: 32px;
+}
+.sort {
+	color: #9c9696;
+    font-weight: 600;
+    padding-left: 12px;
+    float: left;
+}
+.sort span {
+	color: #f02b63;
+}
+.by {
+	float: right;
+	padding-right: 10px;
+}
+.panel .like-a {
+	overflow: hidden;
+    display: block;
+    margin: 14px 20px;
+    color: #303030;
+    text-decoration: none;
+}
+.panel {
+	display: none;
+
+}
+.panel input {
+	display: none;
+}
+
+.panel .like-a input[type="checkbox"]+label span:first-child {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border: 2px solid #7db122;
+
+    bottom: 3px;
+}
+.smb {
+	padding-left: 20px;
+    color: black;
+    font-size: 16px;
+}
+.best {
+	overflow: hidden;
+	background-color: rgba(238, 238, 238, 0.63);
+	margin: 15px 0;
+}
+.best-img {
+	float: left;
+	padding-top: 9px;
+}
+.best-detail {
+	float: left;
+}
+.best-detail h6 {
+    margin: 0;
+    font-size: 15px;
+    padding: 5px;
+}
+.best-detail p {
+    margin: 0;
+    font-size: 11px;
+    padding-left: 6px;
+    color: #aba9a9;
+}
+.best-detail ul {
+    overflow: hidden;
+    width: 143px;
+    margin: 0;
+    list-style: none;
+    padding-left: 7px;
+}
+.best-detail ul b {
+	float: left;
+	padding: 0 10px;
+}
+.best-detail ul li {
+    float: left;
+    font-size: 10px;
+    color: #aba9a9;
+}
+.best-detail ul li span {
+	color: red;
+	font-size: 13px;
+}
