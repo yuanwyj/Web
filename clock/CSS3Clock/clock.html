@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>a sample clock</title>
+	<script type="text/javascript" src="jquery-1.2.6.min.js"></script>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		#clock {
+			background: url(images/clockface.jpg); 
+			width: 600px;
+			height: 600px;
+			margin:20px auto 0 auto;
+			position: relative;list-style: none;
+		}
+		#sec {
+			background: url(images/sechand.png);
+			width: 30px;
+        	height: 600px;
+    		left: 285px;
+    		position: absolute;
+    		z-index: 100;
+		}
+		#hour {
+			background: url(images/hourhand.png);
+			width: 30px;
+        	height: 600px;
+    		left: 285px;
+    		position: absolute;
+    		z-index: 1
+		}
+		#min {
+			background: url(images/minhand.png);
+			width: 30px;
+        	height: 600px;
+    		left: 285px;
+    		position: absolute;
+    		z-index: 10
+		}
+		p {
+            text-align: center; 
+            padding: 10px 0 0 0;
+        }
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			setInterval(function() {
+				var seconds = new Date().getSeconds();
+				var sdegree  = seconds * 6;
+				var srotate = "rotate(" + sdegree + "deg)";
+
+				$("#sec").css({"-moz-transform":srotate,"-webkit-transform:":srotate,"transform": srotate});
+			},1000);
+
+			setInterval(function() {
+				var hour = new Date().getHours();
+				var mins = new Date().getMinutes();
+				var hdegree = hour * 30 + (mins/2);
+				var hrotate = "rotate(" + hdegree + "deg)";
+
+				$("#hour").css({"-moz-transform":hrotate,"-webkit-transform:":hrotate,"transform":hrotate});
+			},1000);
+
+			setInterval(function() {
+				var mins = new Date().getMinutes();
+				var mdegree = mins * 6;
+				var mrotate = "rotate(" + mdegree + "deg)";
+
+				$("#min").css({"-moz-transform":mrotate,"-webkit-transform:":mrotate,"transform":mrotate})
+			},1000);
+		});
+
+	</script>
+</head>
+<body>
+	<div container>
+		<ul id="clock">
+			<li id="sec"></li>
+			<li id="hour"></li>
+			<li id="min"></li>
+		</ul>
+	</div>
+</body>
+</html>
