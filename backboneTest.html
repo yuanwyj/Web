@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>the5fire-backbone-model</title>
+</head>
+<body>
+</body>
+<script src="http://the5fireblog.b0.upaiyun.com/staticfile/jquery-1.10.2.js"></script>
+<script src="http://the5fireblog.b0.upaiyun.com/staticfile/underscore.js"></script>
+<script src="http://the5fireblog.b0.upaiyun.com/staticfile/backbone.js"></script>
+<script>
+(function ($) {
+    /**
+    *write a simple module
+    **/
+    var Man = Backbone.Model.extend({
+    	url: '/login/',
+    	initialize: function() {
+    		alert("I'm a good man, i have a beautiful and good wife");
+    		//Initialize binding monitor
+    		this.bind("change:name",function() {
+    			var name = this.get('name');
+    			alert('You have change the attribute of name:' + name);
+    		});
+    		this.bind("invalid",function(model,error) {
+    			alert(error);
+    		});
+    	},
+    	defaults: {
+    		name: 'Paul',
+    		age: '33'
+    	},
+    	validate: function(attributes) {
+    		if (attributes.name == '') {
+    			return "name can't be empty.";
+    		}
+    	},
+    	aboutMe: function() {
+    		return 'My name is' + this.get('name') + this.get('age') + 'years old.';
+    	}, 
+    });
+    var man = new Man;
+    var woman = new Man;
+    // man.set({name:'james',age:'33'});
+    man.set({name:''});
+    man.save();
+    alert(man.aboutMe());
+    woman.fetch({
+    	url: '/login',
+    	success: function(model,response) {
+    		alert("success");
+    		alert(model.get('name'));
+    	},
+    	error: function() {
+    		alert("error");
+    	}
+    })
+})(jQuery);
+</script>
+</html>

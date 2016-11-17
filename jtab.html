@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery tab 插件</title>
+	<style type="text/css">
+		body {
+			overflow: hidden;
+		}
+	 	#tabs {
+			list-style: none;
+			float: left;
+		}
+		#tabs li {
+			width: 200px;
+			height: 30px;
+			background: #555;
+			color: #fff;
+			margin-top: 3px;
+			text-align: center;
+			line-height: 30px;
+		}
+		.active {
+			display: block!important;
+		}
+		#tabsContent div {
+			display: none;
+			background: #ccc;
+			width: 300px;
+			height: 300px;
+			float: left;
+			margin-left: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<ul id="tabs">
+		<li data-tab = "users">Users</li>
+		<li data-tab = "groups">Groups</li>
+	</ul>
+	<div id="tabsContent">
+		<div data-tab = "users">这里是天才小熊猫</div>
+		<div data-tab = "groups">这里是bossyuan</div>
+	</div>
+	<script type="text/javascript" src="./js/jquery.min.js" ></script>
+	<script type="text/javascript" src="./js/jtab.js"></script>
+	<script type="text/javascript" src="./js/use.js"></script>
+</body>
+</html>

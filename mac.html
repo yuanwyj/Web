@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>the nav like mac</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0px;
+		}
+		#wraper {
+    		position: fixed;
+    		bottom: 12px;
+    		height: 120px;
+    		padding: 50px 0 0;
+    		text-align: center;
+    		-webkit-border-radius: 6px;
+    		-moz-border-radius: 6px;
+    		width: 100%;
+    		line-height: 1;
+    		z-index: 100;
+		}
+		#dockworaper {
+			width: auto;
+    		display: inline-block;
+    		position: relative;
+    		border-bottom: solid 2px rgba(255,255,255,.35);
+    		line-height: 0;
+		}
+		.cap {
+			display: block;
+    		height: 100px;
+    		width: 40px;
+    		background: url(./images/dock-background-left.png) bottom left no-repeat;
+		}
+		.left {
+			position: absolute;
+    		bottom: 0px;
+    		left: 0px;
+		}
+		.dock {
+			display: inline-block;
+    		height: 130px;
+    		padding: 0 40px 0 0;
+    		background: url(/playground/playground/osx-dock/dock-background-left.png) no-repeat right bottom;
+    		overflow: hidden;
+    		margin: 0 0 0 40px;
+		}
+		.dock li {
+			display: block;
+			position: relative;
+			float: left;
+			width: 50px;
+			height: 50px;
+			margin: 60px 0 4px 0;
+			-webkit-transition: 0.15s linear;
+			transform: 0.15s linear;
+    		-webkit-transition-property: -webkit-transform margin;
+    		text-align: center;
+		}
+		.dock li span {
+			background: rgba(0,0,0,0.75);
+    		position: absolute;
+    		bottom: 80px;
+    		margin: 0 auto;
+    		display: none;
+    		width: auto;
+    		font-size: 11px;
+    		font-weight: bold;
+    		padding: 3px 6px;
+    		-webkit-border-radius: 6px;
+    		color: #fff;
+		}
+		.dock li a {
+    		display: block;
+    		height: 50px;
+    		padding: 0 1px;
+    		-webkit-transition: 0.15s linear;
+    		-webkit-transition-property: -webkit-transform margin;
+    		margin: 0;
+    		-webkit-box-reflect: below 2px -webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(0.45,transparent),to(rgba(255,255,255,0.25)));
+		}
+		.dock li a img {
+			width: 48px;
+		}
+		.dock li:hover {
+			margin-left: 9px;
+			margin-right: 9px;
+			z-index: 200;
+		}
+		.nearly-by {
+			margin-left: 6px;
+			margin-right: 6px;
+			z-index: 100px;
+		}
+		.dock li a img:hover {
+    		width: 70px;
+    		height: 70px;
+    		margin-top: -15px;
+    		margin-left: -15px;
+		}
+	
+	</style>
+</head>
+<body>
+	<div id="wraper">
+		<div id="dockworaper">
+			<div class="cap left"></div>
+		<ul class="dock">
+			<li class="active">
+				<span>ZURB</span>
+				<a href="#"><img src="./images/zurb-icon.png"></a>
+			</li>
+			<li>
+				<span>FACEBOOK</span>
+				<a href="#"><img src="./images/facebook-icon.png"></a>
+			</li>			<li>
+				<span>FACEBOOK</span>
+				<a href="#"><img src="./images/facebook-icon.png"></a>
+			</li>			<li>
+				<span>FACEBOOK</span>
+				<a href="#"><img src="./images/facebook-icon.png"></a>
+			</li>			<li>
+				<span>FACEBOOK</span>
+				<a href="#"><img src="./images/facebook-icon.png"></a>
+			</li>			<li>
+				<span>FACEBOOK</span>
+				<a href="#"><img src="./images/facebook-icon.png"></a>
+			</li>			<li>
+				<span>FACEBOOK</span>
+				<a href="#"><img src="./images/facebook-icon.png"></a>
+			</li>
+		</ul>
+		</div>
+	</div>
+</body>
+</html>
