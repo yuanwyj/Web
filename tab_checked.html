@@ -1,0 +1,71 @@
+
+<!-- //CSS checked 属性超简洁制作tab选项卡 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>input: checked</title>
+	<style type="text/css">
+		.adm-sidebar-list {
+			list-style: none;
+		}
+		.adm-sidebar-list> li {
+			width: 200px;
+			background-color: rgba(111, 94, 94, 0.08);
+			height: auto;
+		}
+		.adm-sidebar-list> li input {
+			position: absolute;
+			width: 100%;
+			height: auto;
+			opacity: 0;
+			z-index: 10;
+		}
+		.adm-sidebar-list> li ul {
+			margin: 0;
+			list-style: none;
+			padding-left: 20px;
+			display: none;
+		}
+
+		.adm-sidebar-list>li input:checked ~ul {
+			display: block;
+			-webkit-animation-duration: 1s;
+		} 
+		@-webkit-keyframes opacityChange {
+			0% {
+				opacity: 0.3;
+			}
+			10% {
+				opacity: 0.8;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+		.adm-sidebar-list> li ul li:hover {
+			background-color: #eee;
+		}
+	</style>
+</head>
+<body>
+	<ul class="adm-sidebar-list">
+		<li>
+			<input type="checkbox" checked="checked" name="">
+			<a href="#">目录一</a>
+			<ul>
+				<li>子目录一</li>
+				<li>子目录二</li>
+			</ul>
+		</li>
+		<li>
+			<input type="checkbox" name="">
+			<a href="#">目录二</a>
+			<ul>
+				<li>子目录一</li>
+				<li>子目录二</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

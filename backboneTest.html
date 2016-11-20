@@ -39,6 +39,27 @@
     		return 'My name is' + this.get('name') + this.get('age') + 'years old.';
     	}, 
     });
+    var AppRouter = Backbone.Router.extend({
+    	routes: {
+    		"post/#id": "getpost",
+    		"download/*path": "downFile",
+    		"route/:action": "loadView",
+    		"*actions": "defaultRoute"
+    	} ,
+    	getpost: function(id) {
+    		alert(id);
+    	},
+    	downFile: function(path) {
+    		alert(path);
+    	},
+    	defaultRoute: function(actions) {
+    		alert(actions);
+    	},
+    	loadView: function(route,action) {
+    		alert(route  + "-.-" + action);
+    	},
+    });
+
     var man = new Man;
     var woman = new Man;
     // man.set({name:'james',age:'33'});
@@ -54,7 +75,9 @@
     	error: function() {
     		alert("error");
     	}
-    })
+    });
+    var app_router = new AppRouter;
+	Backbone.history.start();
 })(jQuery);
 </script>
 </html>

@@ -1,0 +1,2 @@
+//Chrome 控制台输入，让页面变成编辑器
+document.body.contentEditable=true;
